@@ -1,0 +1,717 @@
+/* ##################### */
+/*  Large Desktop > 1440px*/
+/* ##################### */
+
+/* Global Section */
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* a {
+    color: white;
+    text-decoration: none;
+} */
+
+.container {
+    /* breakpoints for large desktop > 1440px */
+    width: 1440px;
+    max-width: 90%;
+    margin: auto;
+}
+
+/* start of header section */
+header {
+    height: 70px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header section.logo {
+    font-size: 27px;
+}
+
+header section.logo span.blue-dot {
+    background-color: #33C6DD;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 26px;
+}
+
+header nav ul li.menu-icon{
+    display: none;
+}
+
+header nav ul li:first-of-type {
+    /* last-of-type is a pseudo class for last li item */
+    margin-left: 0;
+}
+
+header nav ul li a {
+    color: #3E3E3E;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header nav ul li a:hover {
+    color: #33C6DD;
+}
+
+
+/* start of hero section */
+section.hero {
+    position: relative;
+}
+
+section.hero img {
+    width: 100%;
+}
+
+section.hero .hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.hero .hero-content .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+section.hero h1, section.hero p {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    max-width: 495px;
+}
+
+section.hero h1 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 56px;
+}
+
+section.hero p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+section.hero button {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #33C6DD;
+    border-radius: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #33C6DD;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+section.hero button:hover {
+    background-color: #FFFFFF;
+    color: #33C6DD;
+    border: 1px solid #33C6DD;
+}
+
+/* start of best sellers section */
+
+section.best-sellers {
+    padding-top: 90px;
+}
+
+section.best-sellers h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+}
+
+section.best-sellers hr {
+    width: 66px;
+    height: 6px;
+    border: none;
+    margin: auto;
+    margin-bottom: 76px;
+    background-color: #33C6DD;
+}
+
+section.best-sellers .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+section.best-sellers .product-slider .product {
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    margin: 0 8px;
+    text-align: center;
+    width: 33%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+} 
+
+section.best-sellers .product-slider .product:hover {
+    cursor: pointer;
+} 
+
+section.best-sellers .product-slider .product.new::before {
+    /* using a psuedo element for "New" */
+    content: "New" ;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    /* text-align: center; */
+    color: white;
+    background-color:#614DC9;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 5px 26px;
+}
+
+section.best-sellers .product-slider .product .product-info {
+    margin-top: 50px;
+}
+
+section.best-sellers .product .product-picture img{
+    max-width: 100%;
+}
+
+section.best-sellers .product-slider .product h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #33C6DD;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+section.best-sellers .product-slider .product h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+section.best-sellers .product-slider .product .price.discount h3 {
+    color:#EC1C1C;
+}
+
+section.best-sellers .product-slider .product .price span.original-price {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: line-through;
+    color: #9B9B9B;
+    margin: 0 10px;
+}
+
+section.best-sellers .product-slider .product .price {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+}
+
+section.best-sellers .product-slider .product .price h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+section.best-sellers .product-slider .product button {
+    text-transform:uppercase;
+    height: 44px;
+    width: 220px;
+    max-width: 100%;
+    border: 1px solid #000000;
+    border-radius: 25px; 
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+section.best-sellers .product-slider .product:hover button{
+    color: white;
+    background-color: #33C6DD;
+    border: 1px solid #33C6DD;
+    cursor: pointer;
+} 
+
+/* Start of Newsletter signup section */
+
+section.newsletter {
+    width: 950px;
+    max-width: 100%;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 80px auto;
+    padding: 72px 0;
+}
+
+section.newsletter h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    /* text properties */
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+}
+
+section.newsletter p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+section.newsletter input[type=email] {
+    font-size: 14px;
+    line-height: 21px;
+    width: 320px;
+    height: 48px;
+    border: 1px solid #000000;
+    border-radius: 25px 0 0 25px;
+    box-sizing: border-box;
+    /* setting default padding to zero */
+    padding-left: 0;
+    /* overriding the default padding after setting the default padding to zero */
+    padding-left: 24px;
+}
+
+section.newsletter input[type=email]::placeholder {
+    color: #3E3E3E;
+}
+
+section.newsletter button[type=submit] {
+    padding: 0 36px;
+    height: 48px;
+    color: #FFFFFF;
+    background-color: #614DC9;
+    border: 1px solid #614DC9;
+    border-radius: 0 25px 25px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+section.newsletter button[type=submit]:hover {
+    color: #614DC9;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+/* Start of the footer section */
+footer {
+    background-color: #3E3E3E;
+    color: #FFFFFF;
+    padding: 60px 0;
+}
+
+footer .container {
+    display: flex;
+    width: 950px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+}
+
+footer ul li.list-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+footer ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #33C6DD;
+}
+/* start of Copyrights Section */
+section.copyright {
+    background-color: #2B2B2B;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 18px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/* ######################## */
+/* Desktop*/
+/* ######################## */
+
+@media screen and (max-width: 1440px) {
+
+    .container {
+        /* breakpoints for large desktop > 1440px */
+        width: 1180px;
+        max-width: 90%;
+    }
+
+    /* hero section */
+    section.hero h1, section.hero p {
+        margin-bottom: 12px;
+    }
+    
+    section.hero h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    
+    section.hero p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    section.hero button {
+        font-size: 14px;
+    }
+
+    /* Best seller section */
+    section.best-sellers .product-slider .product h5 {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    section.best-sellers .product-slider .product h4 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    section.best-sellers .product-slider .product .price span.original-price {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    section.best-sellers .product-slider .product .price {
+            margin-bottom: 6px;
+    }
+    
+    section.best-sellers .product-slider .product .price h3 {
+        font-size: 24px;
+
+    }
+    
+    section.best-sellers .product-slider .product button {
+        height: 40px;
+        width: 180px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    /* NewsLetter section */
+    section.newsletter {
+        width: 880px;
+        margin: 70px auto;
+        padding: 50px 0;
+    }
+    
+    section.newsletter h3 {
+        font-size: 22px;
+    }
+    
+    section.newsletter p {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    section.newsletter input[type=email] {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    section.newsletter button[type=submit] {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* Footer section */
+    footer {
+        padding: 50px 0;
+    }
+    
+    footer .container {
+        width: 1180px;
+        max-width: 90%;
+    }
+    
+    footer ul li.list-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    footer ul li {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    
+    /* Copyright section */
+    section.copyright {        
+        padding: 14px 0;        
+        font-size: 14px;      
+    }
+
+}
+
+
+/* ######################## */
+/* Tablet*/
+/* ######################## */
+
+@media screen and (max-width: 960px) {
+
+    .container {
+        /* breakpoints for large desktop > 1440px */
+        width: 92%;
+        max-width: 92%;
+    }
+    
+    header nav ul li{
+        display: none;
+        margin-left: 26px;
+    }
+    
+    header nav ul li.menu-icon{
+        display: inline-block;
+    }
+    
+
+    /* Hero section */
+    section.hero h1 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    
+    section.hero p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* Best sellers section */
+    section.best-sellers h2 {
+        margin-bottom: 12px;
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+    section.best-sellers hr {
+        margin-bottom: 48px;
+    }
+
+    section.best-sellers .product-slider .product.new::before {
+        top: 6px;
+        font-size: 11px;
+        padding: 5px 14px;
+    }
+
+    section.best-sellers .product-slider .product h5 {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    
+    section.best-sellers .product-slider .product h4 {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    
+    section.best-sellers .product-slider .product .price span.original-price {
+        font-size: 9px;
+    }
+    
+    section.best-sellers .product-slider .product .price h3 {
+        font-size: 16px;
+
+    }
+    
+    section.best-sellers .product-slider .product button {
+        height: 36px;
+        width: 146px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* Newsletter section */
+    section.newsletter {
+        width: 100%;
+        margin: 48px auto;
+    }
+    
+    /* Footer section */
+    footer .container {
+        width: 92%;
+        max-width: 92%;
+    }
+    
+}
+
+/* ######################## */
+/* Mobile*/
+/* ######################## */
+
+@media screen and (max-width: 576px) {
+
+    .container {
+        /* breakpoints for large desktop > 1440px */
+        width: 92%;
+        max-width: 92%;
+    }
+
+    header section.logo {
+        font-size: 18px;
+    }
+    
+    /* Hero section */
+
+    section.hero h1, section.hero p {
+        margin-bottom: 32px;
+    }
+
+    section.hero h1 {
+        font-size: 32px;
+        line-height: 38px;
+        color: black;
+    }
+
+    
+    section.hero p {
+        display: none;
+    }
+
+    section.hero .hero-content {
+        position: initial;
+        text-align: center;
+        margin-top: 26px;
+    }
+    
+    section.hero .hero-content .container {
+        align-items: center;
+    }
+
+    /* Best sellers section */
+    section.best-sellers .container {
+        flex-wrap: wrap;
+    }
+    
+    section.best-sellers .product-slider .product {
+        width: 100%;
+        margin-bottom: 24px;
+    } 
+
+    section.best-sellers .product-slider .product:last-of-type {
+        margin-bottom: 0;
+    } 
+    
+    section.best-sellers .product-slider .product h4 {
+        font-size: 14px;
+    }
+    
+    section.best-sellers .product-slider .product .price span.original-price {
+        font-size: 11px;
+    }
+    
+    section.best-sellers .product-slider .product .price h3 {
+        font-size: 20px;
+    }
+    
+    section.best-sellers .product-slider .product button {
+        height: 36px;
+        width: 190px;
+        max-width: 100%;
+    }
+
+    /* Newsletter section */
+    section.newsletter {
+        margin: 64px auto;
+        padding: 44px 0;
+    }
+
+    section.newsletter input[type=email] {
+        width: 210px;  
+    }
+    
+    section.newsletter button[type=submit] {
+        padding: 0 20px;
+    }
+    
+    /* Footer section */
+    footer {
+        padding: 48px 0;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    footer ul {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    footer ul:last-of-type {
+        margin-bottom: 0;
+    }
+}
